@@ -14,7 +14,9 @@
       </v-col>
 
       <v-col cols="12">
-      
+        <v-alert v-show="error" shaped prominent type="error" >
+          Error al intentar conectar con el backend, revise el archivo main.js en el se encuentra la propiedad baseURL la cual tiene la direccion principal del backend. Revise y vuelva a realizar Build
+        </v-alert>
         <h2 class="headline font-weight-bold mb-3">
           Agregar:
         </h2>
@@ -25,10 +27,11 @@
           <v-text-field
             label="Nueva Tarea:"
             outlined
+            v-model="nuevaTarea.nombre"
           ></v-text-field>
       </v-col> 
       <v-col cols="1" class="mt-2">
-        <v-btn color="primary" >Agregar</v-btn>
+        <v-btn :disabled="!nuevaTarea.nombre" color="primary" @click="agregarTarea">Agregar</v-btn>
       </v-col>
 
           
@@ -61,6 +64,7 @@
                     dark
                     small
                     color="primary"
+                    @click="eliminarTarea(tarea)"
                   >
                     <v-icon dark>
                       mdi-minus
@@ -84,34 +88,54 @@
 
   export default {
     name: 'HelloWorld',
-
     data: () => ({
-      tareas:[
-            {
-              "id": "624f90bad9069d158165b821",
-              "nombre": "lavar los trastes",
-              "hecho": false
-            },
-            {
-              "id": "624f90ccd9069d158165b822",
-              "nombre": "limpiar el cuarto",
-              "hecho": true
-            },
-            {
-              "id": "624f90ccd9069d158165b824",
-              "nombre": "limpiar el cuarto",
-              "hecho": true
-            }
-          ]
-    }),
-    methods:()=>({
-      cargarDatos(){
-        this.axios.get('http://localhost:3000/tareas')
-              .then(function(response){
-                console.log(response)
-              })
-
+      error:false,
+      tareas:[],
+      nuevaTarea:{
+        "nombre": "",
+        "hecho": false
       },
-    })
+    }),
+    methods:{
+      cargarDatos(){
+        let thisVue=this
+        this.axios.get('/tareas')
+              .then(function(response){
+                //console.log(response.data)
+                thisVue.tareas=[]
+                thisVue.tareas=response.data                
+              })
+              .catch((error)=>{
+                console.log(error)
+                thisVue.error=true
+              })
+      },
+      agregarTarea(){
+        let thisVue=this
+        this.axios.post('/tareas',thisVue.nuevaTarea)
+              .then(function(){
+                thisVue.cargarDatos()             
+              })
+              .catch((error)=>{
+                console.log(error)
+                thisVue.error=true
+              })
+        thisVue.nuevaTarea.nombre=""
+      },
+      eliminarTarea(ltarea){
+        let thisVue=this
+        this.axios.delete('/tareas/'+ ltarea.id)
+              .then(function(){
+                thisVue.cargarDatos()             
+              })
+              .catch((error)=>{
+                console.log(error)
+                thisVue.error=true
+              })
+      },
+    },
+    mounted(){
+      this.cargarDatos()
+    }   
   }
 </script>

@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "push-dir --dir=dist --branch=webapp"
+    "deploy": "push-dir --dir=dist --branch=dist"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",

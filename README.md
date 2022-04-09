@@ -19,3 +19,6 @@ npm run build
 
 ### Configure correctamente la API del Backend
 dentro de la carpeta src se encuentra el archivo main.js en dicho archivo se encuentra la configuracion de la URL del backend edite la misma para que se conecte a dicho servicio luego puede probar y compilar para produccion.
+```
+axios.defaults.baseURL="http://localhost:3000"
+```

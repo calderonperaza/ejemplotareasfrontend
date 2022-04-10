@@ -22,3 +22,9 @@ dentro de la carpeta src se encuentra el archivo main.js en dicho archivo se enc
 ```
 axios.defaults.baseURL="http://localhost:3000"
 ```
+### deploy en rama dist
+hay una branch dedicado a contener los archivos de distribucion build, con el objetivo de hacer deploy con github incluso en entrega continua para ello debe ejecutar los comandos(se utiliza push-dir para ello)
+```
+npm run build
+npm run deploy
+```

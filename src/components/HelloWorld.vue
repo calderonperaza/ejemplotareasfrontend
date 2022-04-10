@@ -123,9 +123,11 @@
         thisVue.nuevaTarea.nombre=""
       },
       eliminarTarea(ltarea){
+        //console.log(ltarea._id)
         let thisVue=this
-        this.axios.delete('/tareas/'+ ltarea.id)
+        this.axios.delete('/tareas/delete/'+ ltarea._id)
               .then(function(){
+                 
                 thisVue.cargarDatos()             
               })
               .catch((error)=>{

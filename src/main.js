@@ -5,8 +5,9 @@ import '@babel/polyfill'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
-//Configurando la direccion del Back End (sin / al final)
-axios.defaults.baseURL="http://localhost:3000"
+//Al correr en contenedor usara la variable de entorno backend
+//Para referir el service name
+axios.defaults.baseURL= process.env.BACKEND || "http://localhost:3000"
 
 
 Vue.use(VueAxios, axios)

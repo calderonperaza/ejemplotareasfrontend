@@ -7,7 +7,7 @@ import VueAxios from 'vue-axios'
 
 //Al correr en contenedor usara la variable de entorno backend
 //Para referir el service name
-axios.defaults.baseURL= process.env.BACKEND || "http://backend:3000"
+axios.defaults.baseURL= process.env.BACKEND || "http://localhost:3000"
 
 
 Vue.use(VueAxios, axios)

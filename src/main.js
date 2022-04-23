@@ -5,6 +5,8 @@ import '@babel/polyfill'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
+
+
 //Al correr en contenedor usara la variable de entorno backend
 //Para referir el service name
 axios.defaults.baseURL= process.env.BACKEND || "https://backend2.us-south.cf.appdomain.cloud"

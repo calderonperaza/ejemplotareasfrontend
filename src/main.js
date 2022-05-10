@@ -6,11 +6,8 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 
 
-
-//Al correr en contenedor usara la variable de entorno backend
-//Para referir el service name
 axios.defaults.baseURL= process.env.BACKEND || "http://backend.alexandercalderon.me:3000"
-//
+
 Vue.use(VueAxios, axios)
 Vue.config.productionTip = false
 

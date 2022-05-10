@@ -5,6 +5,11 @@ Ejecute el siguiente comando en una consola para instalar todas las dependencias
 ```
 npm install
 ```
+### Instale el vue CLI
+El proyecto esta desarrollado en Vue cli por lo que debe instalarlo para asi poder editar el proyecto
+```
+npm install -g @vue/cli
+```
 
 ### Levante DEV
 ejecute el siguiente comando para levantar localmente el proyecto y probarlo

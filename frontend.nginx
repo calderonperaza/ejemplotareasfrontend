@@ -1,0 +1,25 @@
+#para los permisos de la Carpeta 
+#sudo mkdir -p /var/www
+#sudo chown -R ubuntu:ubuntu /var/www 
+#Donde ubuntu es el nombre de usuario del sistema
+
+#para enlace simbolico
+# sudo ln -s /etc/nginx/sites-available/archivo /etc/nginx/sites-enabled/archivo
+
+#probar la configuracion nginx
+#sudo nginx -t
+#reiniciar el servicio
+#sudo systemctl restart nginx
+
+
+server {
+    listen 80;
+	listen [::]:80;
+    server_name frontend.alexandercalderon.me;
+    root /var/www/html;
+    index index.html;
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+}

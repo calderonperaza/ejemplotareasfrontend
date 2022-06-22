@@ -6,7 +6,7 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 
 //url del backend recuerda quitar cualquier pleca del final / quitarla
-axios.defaults.baseURL= process.env.BACKEND || "https://uesejemplotarea1.us-south.cf.appdomain.cloud/"
+axios.defaults.baseURL= process.env.BACKEND || "https://uesejemplotarea1.us-south.cf.appdomain.cloud"
 //axios.defaults.baseURL= process.env.BACKEND || "http://backend.io"
 
 

@@ -26,3 +26,4 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm run build --if-present
+    - run: cp -r /home/administrador/actions-runner/_work/ejemplotareasfrontend/ejemplotareasfrontend/dist/ /home/administrador/frontend

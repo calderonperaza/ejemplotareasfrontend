@@ -1,0 +1,84 @@
+{
+  "id": "c5308cb4-4285-45ae-8225-fee4f351ed9c",
+  "version": "2.0",
+  "name": "ejemplotareas",
+  "url": "http://localhost:8081",
+  "tests": [{
+    "id": "470f6657-e7cb-4d0d-afba-9f618779ca97",
+    "name": "pruebaTarea",
+    "commands": [{
+      "id": "f2a33937-eeb3-440e-8ab9-3bc3203e9597",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f2c9296-a2a3-4f10-a7f8-52f22754f1fa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "747a6690-256c-4116-ba2e-53b26d9622d2",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-14",
+      "targets": [
+        ["id=input-14", "id"],
+        ["css=#input-14", "css:finder"],
+        ["xpath=//input[@id='input-14']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/main/div/div/div/div[2]/div[2]/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19731f3f-f032-463f-8da4-972b3a1586a2",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-14",
+      "targets": [
+        ["id=input-14", "id"],
+        ["css=#input-14", "css:finder"],
+        ["xpath=//input[@id='input-14']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/main/div/div/div/div[2]/div[2]/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Tareaxyz"
+    }, {
+      "id": "a42501f0-1e91-44e6-8fe7-2315a108d3a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.theme--light > .v-btn__content",
+      "targets": [
+        ["css=.theme--light > .v-btn__content", "css:finder"],
+        ["xpath=//div[@id='app']/div/main/div/div/div/div[2]/div[2]/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f34d9b1-893a-4c0f-9150-0517ad799dd0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.ma-3:nth-child(4) .v-label",
+      "targets": [
+        ["css=.ma-3:nth-child(4) .v-label", "css:finder"],
+        ["xpath=//div[@id='app']/div/main/div/div/div/div[3]/div/div[4]/div/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Tareaxyz')]", "xpath:innerText"]
+      ],
+      "value": "Tareaxyz"
+    }]
+  }],
+  "suites": [{
+    "id": "e79922ac-7133-4acd-a148-aac3f4ac252e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["470f6657-e7cb-4d0d-afba-9f618779ca97"]
+  }],
+  "urls": ["http://localhost:8081/"],
+  "plugins": []
+}

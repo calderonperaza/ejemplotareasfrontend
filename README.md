@@ -27,9 +27,25 @@ dentro de la carpeta src se encuentra el archivo main.js en dicho archivo se enc
 ```
 axios.defaults.baseURL="http://localhost:3000"
 ```
-### deploy en rama dist
-hay una branch dedicado a contener los archivos de distribucion build, con el objetivo de hacer deploy con github incluso en entrega continua para ello debe ejecutar los comandos(se utiliza push-dir para ello)
+### deploy
+
 ```
 npm run build
 npm run deploy
+```
+
+### PRUEBAS
+hay una carpeta llamada test en ella hay un archivo de pruebas de selenium-ide con el cual se realiza una prueba al sistema para verificar su funcionalidad.
+
+Se requiere que se instale el cliente de selenium y tambien command line runer
+
+```
+npm install -g selenium-side-runer
+npm install -g chromedriver
+```
+
+Luego que se ha instalado todo para ejecutar la prueba se corre el comando
+```
+selenium-side-runner ./test/prueba1.side  --output-directory="./test"
+
 ```

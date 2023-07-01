@@ -48,7 +48,7 @@
       "value": "Tareaxyz"
     }, {
       "id": "a42501f0-1e91-44e6-8fe7-2315a108d3a7",
-      "comment": "",
+      "comment": "Agrego una tarea de prueba",
       "command": "click",
       "target": "css=.theme--light > .v-btn__content",
       "targets": [
@@ -58,17 +58,19 @@
       ],
       "value": ""
     }, {
-      "id": "4f34d9b1-893a-4c0f-9150-0517ad799dd0",
+      "id": "6f5b4a62-9b40-423f-83a4-e0b77b57e7a2",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "css=.ma-3:nth-child(4) .v-label",
-      "targets": [
-        ["css=.ma-3:nth-child(4) .v-label", "css:finder"],
-        ["xpath=//div[@id='app']/div/main/div/div/div/div[3]/div/div[4]/div/div/div/div/label", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div/div/div/label", "xpath:position"],
-        ["xpath=//label[contains(.,'Tareaxyz')]", "xpath:innerText"]
-      ],
+      "target": "css=.row:nth-child(2)",
+      "targets": [],
       "value": "Tareaxyz"
+    }, {
+      "id": "1db176b1-364b-4dda-b228-4a5fc62c88af",
+      "comment": "Elimino la tarea de prueba agregada",
+      "command": "click",
+      "target": "css=.ma-3:nth-last-child(1) .v-btn .v-icon",
+      "targets": [],
+      "value": ""
     }]
   }],
   "suites": [{

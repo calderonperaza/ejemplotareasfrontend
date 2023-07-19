@@ -1,0 +1,7 @@
+npm install -g selenium-side-runner@3.17.0
+#luego instalé el driver de chrome 
+#http://chromedriver.storage.googleapis.com/index.html
+#http://chromedriver.storage.googleapis.com/index.html?path=110.0.5481.77/
+#se debe descargar y luego configurar el path
+
+selenium-side-runner ./test/prueba2.side

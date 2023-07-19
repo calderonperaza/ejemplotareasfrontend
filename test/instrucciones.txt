@@ -3,5 +3,7 @@ npm install -g selenium-side-runner@3.17.0
 #http://chromedriver.storage.googleapis.com/index.html
 #http://chromedriver.storage.googleapis.com/index.html?path=110.0.5481.77/
 #se debe descargar y luego configurar el path
-
+#con el puerto 8080
 selenium-side-runner ./test/prueba2.side
+#con el puerto 8081
+selenium-side-runner ./test/prueba1.side

@@ -2,7 +2,7 @@
   "id": "c5308cb4-4285-45ae-8225-fee4f351ed9c",
   "version": "2.0",
   "name": "ejemplotareas",
-  "url": "http://localhost:8081",
+  "url": "http://localhost:8888",
   "tests": [{
     "id": "470f6657-e7cb-4d0d-afba-9f618779ca97",
     "name": "pruebaTarea",

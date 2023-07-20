@@ -16,6 +16,10 @@ ejecute el siguiente comando para levantar localmente el proyecto y probarlo
 ```
 npm run serve
 ```
+si deseas cambiar el numero de puerto 
+```
+npm run serve -- --port 8888
+```
 
 ### Compilar para produccion
 ```

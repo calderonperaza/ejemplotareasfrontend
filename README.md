@@ -43,9 +43,11 @@ hay una carpeta llamada test en ella hay un archivo de pruebas de selenium-ide c
 
 Se requiere que se instale el cliente de selenium y tambien command line runer
 
+recuerde que nuestro escenario nodejs es 12.22.1
+
 ```
-npm install -g selenium-side-runer
-npm install -g chromedriver
+npm i -g selenium-side-runner@3.17.0
+npm install -g chromedriver@88.0.0
 ```
 
 Luego que se ha instalado todo para ejecutar la prueba se corre el comando

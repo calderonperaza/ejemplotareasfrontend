@@ -2,7 +2,7 @@
   "id": "c5308cb4-4285-45ae-8225-fee4f351ed9c",
   "version": "2.0",
   "name": "ejemplotareas",
-  "url": "http://localhost:8888",
+  "url": "http://localhost:8081",
   "tests": [{
     "id": "470f6657-e7cb-4d0d-afba-9f618779ca97",
     "name": "pruebaTarea",
@@ -61,7 +61,7 @@
       "id": "6f5b4a62-9b40-423f-83a4-e0b77b57e7a2",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "css=.row:nth-child(2)",
+      "target": "css=.row:nth-last-child(1)",
       "targets": [],
       "value": "Tareaxyz"
     }, {

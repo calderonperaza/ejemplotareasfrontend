@@ -20,3 +20,4 @@ CMD ["nginx", "-g", "daemon off;"]
 #FROM nginx:1.17.10-alpine
 #COPY /dist /usr/share/nginx/html
 #EXPOSE 80
+#

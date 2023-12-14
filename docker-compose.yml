@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  frontend:
+    build:
+      context: .      
+    ports:
+      - "9080:80"
+
+#para iniciar usa el comando
+#sudo docker compose up -d
+#para detener
+#sudo docker compose down
+#para obligar a compilar de nuevo
+#sudo docker compose up -d --build

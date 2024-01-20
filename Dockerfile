@@ -20,6 +20,8 @@ CMD ["nginx", "-g", "daemon off;"]
 # para crear la imagen ejecute
 #sudo docker build -t mirepo/ejemplofrontend:latest .
 
+#sudo docker login 
+#sudo docker push calderonperaza/ejemplobackend:latest
 
 #Si hace manualmente la etapa de Compilacion
 #FROM nginx:1.17.10-alpine

@@ -6,7 +6,7 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 
 //url del backend recuerda quitar cualquier pleca del final / quitarla
-axios.defaults.baseURL= "https://dockerbackend.alexandercalderon.online"
+axios.defaults.baseURL= "https://backenddocker.alexandercalderon.online"
 //axios.defaults.baseURL= "http://localhost:3000"
 
 Vue.use(VueAxios, axios)

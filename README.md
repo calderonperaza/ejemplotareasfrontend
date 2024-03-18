@@ -1,7 +1,7 @@
 # ejemplotareasfrontend
 
 ## Paso 1: Instalar dependencias
-Ejecute el siguiente comando en una consola para instalar todas las dependencias del proyecto
+Ejecute el siguiente comando en una consola para instalar todas las dependencias del proyecto, use Node 12.22.1
 ```
 npm install
 ```

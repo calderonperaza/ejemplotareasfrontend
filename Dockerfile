@@ -2,7 +2,8 @@
 FROM node:12.22.1-alpine as build-stage
 
 WORKDIR /app
-
+#se puede indicar la url del backend por medio de esta variable, si esta vacia se tomara localhost:3000
+ENV VUE_APP_URL_BACKEND=''
 COPY package*.json ./
 
 RUN npm install

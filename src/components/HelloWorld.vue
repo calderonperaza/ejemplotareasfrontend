@@ -11,6 +11,7 @@
           Front End del sistema de tareas,<br> para utilizar como ejemplo en las practicas de despliegue.
           
         </p>
+        
       </v-col>
 
       <v-col cols="12">
@@ -94,7 +95,8 @@
       nuevaTarea:{
         "nombre": "",
         "hecho": false
-      },
+      }
+      
     }),
     methods:{
       cargarDatos(){

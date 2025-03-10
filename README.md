@@ -1,5 +1,7 @@
 # ejemplotareasfrontend
 
+## REQUERIMOS NODE JS VERSION 12.22.1
+
 ## Paso 1: Instalar dependencias
 Ejecute el siguiente comando en una consola para instalar todas las dependencias del proyecto
 ```

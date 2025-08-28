@@ -27,11 +27,13 @@
           <v-text-field
             label="Nueva Tarea:"
             outlined
-            v-model="nuevaTarea.nombre"
+            v-model="nuevaTarea.nombre"            
           ></v-text-field>
       </v-col> 
       <v-col cols="1" class="mt-2">
-        <v-btn :disabled="!nuevaTarea.nombre" color="primary" @click="agregarTarea">Agregar</v-btn>
+        <v-btn :disabled="!nuevaTarea.nombre" color="primary" @click="agregarTarea"
+        
+        >Agregar</v-btn>
       </v-col>
 
           
